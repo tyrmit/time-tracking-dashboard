@@ -16,7 +16,7 @@ function App() {
             <Activity
                 key={activity.title}
                 title={activity.title}
-                timeframes={activity.timeframes}
+                timeframe={activity.timeframes[reportPeriod]}
             ></Activity>
         );
     });
