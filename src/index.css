@@ -2,13 +2,21 @@
 body {
     margin: 0;
     font-family: 'Rubik', sans-serif;
+    font-size: 0.7rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #0d1323;
-    color: #ffffff;
+    color: hsl(236, 100%, 87%);
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
+}
+
+h3 {
+    margin-block: auto;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    color: #fff;
 }
