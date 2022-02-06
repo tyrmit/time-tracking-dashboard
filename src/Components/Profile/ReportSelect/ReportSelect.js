@@ -4,17 +4,26 @@ import classes from './ReportSelect.module.css';
 
 const ReportSelect = (props) => {
     const reportPeriodContext = useContext(ReportPeriodContext);
+
+    const getClasses = (period) => {
+        let classList = classes.NavItem;
+        if (reportPeriodContext.reportPeriod === period) {
+            classList += ' ' + classes.Highlighted;
+        }
+        return classList;
+    };
+
     return (
         <nav className={classes.ReportPeriodOptions}>
             <ul className={classes.NavItems}>
                 <li
-                    className={classes.NavItem}
+                    className={getClasses('daily')}
                     onClick={() => reportPeriodContext.setReportPeriod('daily')}
                 >
                     Daily
                 </li>
                 <li
-                    className={classes.NavItem}
+                    className={getClasses('weekly')}
                     onClick={() =>
                         reportPeriodContext.setReportPeriod('weekly')
                     }
@@ -22,7 +31,7 @@ const ReportSelect = (props) => {
                     Weekly
                 </li>
                 <li
-                    className={classes.NavItem}
+                    className={getClasses('monthly')}
                     onClick={() =>
                         reportPeriodContext.setReportPeriod('monthly')
                     }

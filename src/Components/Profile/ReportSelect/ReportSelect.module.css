@@ -17,3 +17,7 @@
     display: inline-block;
     font-size: 0.9rem;
 }
+
+.Highlighted {
+    color: #fff;
+}
