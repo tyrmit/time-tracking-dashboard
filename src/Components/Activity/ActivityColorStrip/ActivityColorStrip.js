@@ -11,7 +11,7 @@ const ActivityColorStrip = (props) => {
         <div className={classList.join(' ')}>
             <img
                 className={classes.ActivityIcon}
-                src={require(`/src/assets/icons/icon-${activityIcon}.svg`)}
+                src={require(`../../../assets/icons/icon-${activityIcon}.svg`)}
                 alt=""
             />
         </div>

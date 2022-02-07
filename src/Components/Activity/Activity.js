@@ -31,7 +31,12 @@ const Activity = (props) => {
     return (
         <React.Fragment>
             <ActivityColorStrip activity={props.title}></ActivityColorStrip>
-            <div className={classes.Activity}>
+            <div
+                className={classes.Activity}
+                data-testid={
+                    props.title.toLowerCase().replaceAll(' ', '-') + '-card'
+                }
+            >
                 <div className={classes.Row}>
                     <div
                         className={[
