@@ -29,10 +29,10 @@ const Activity = (props) => {
     };
 
     return (
-        <React.Fragment>
+        <div className={classes[props.title.replace(' ', '')]}>
             <ActivityColorStrip activity={props.title}></ActivityColorStrip>
             <div
-                className={classes.Activity}
+                className={classes.ActivityDetail}
                 data-testid={
                     props.title.toLowerCase().replaceAll(' ', '-') + '-card'
                 }
@@ -60,7 +60,7 @@ const Activity = (props) => {
                     </div>
                 </div>
             </div>
-        </React.Fragment>
+        </div>
     );
 };
 

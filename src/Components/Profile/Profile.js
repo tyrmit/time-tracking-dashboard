@@ -5,7 +5,7 @@ import ReportSelect from './ReportSelect/ReportSelect';
 
 const Profile = (props) => {
     return (
-        <React.Fragment>
+        <div className={classes.Profile}>
             <div className={classes.ProfileDetail}>
                 <img
                     className={classes.ProfilePic}
@@ -18,7 +18,7 @@ const Profile = (props) => {
                 </div>
             </div>
             <ReportSelect></ReportSelect>
-        </React.Fragment>
+        </div>
     );
 };
 

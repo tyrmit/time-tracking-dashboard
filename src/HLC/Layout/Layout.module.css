@@ -1,5 +1,17 @@
 .Layout {
     text-align: center;
     width: 80%;
+    max-width: 400px;
     margin: 20px auto 0;
+}
+
+@media (min-width: 900px) {
+    .Layout {
+        display: grid;
+        grid-template-areas:
+            'profile    work       play    study'
+            'profile    exercise   social  self-care';
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
 }

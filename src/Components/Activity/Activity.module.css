@@ -1,4 +1,4 @@
-.Activity {
+.ActivityDetail {
     text-align: center;
     padding: 1.5rem;
     padding-top: 2rem;
@@ -25,4 +25,30 @@
 .ActivityTitle {
     font-size: 0.9rem;
     color: #fff;
+}
+
+@media (min-width: 900px) {
+    .Work {
+        grid-area: work;
+    }
+
+    .Play {
+        grid-area: play;
+    }
+
+    .Study {
+        grid-area: study;
+    }
+
+    .Exercise {
+        grid-area: exercise;
+    }
+
+    .Social {
+        grid-area: social;
+    }
+
+    .SelfCare {
+        grid-area: self-care;
+    }
 }
