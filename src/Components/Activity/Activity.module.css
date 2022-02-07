@@ -1,7 +1,7 @@
 .Activity {
     text-align: center;
     padding: 1.5rem;
-    margin: 1rem auto;
+    padding-top: 2rem;
     background-color: #1d204b;
     border-radius: 10px;
 }

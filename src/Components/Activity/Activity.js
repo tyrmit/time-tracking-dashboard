@@ -1,6 +1,8 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import ReportPeriodContext from '../../Store/report-period-context';
 import classes from './Activity.module.css';
+import ellipsisIcon from '../../assets/icons/icon-ellipsis.svg';
+import ActivityColorStrip from './ActivityColorStrip/ActivityColorStrip';
 
 const Activity = (props) => {
     const reportPeriodContext = useContext(ReportPeriodContext);
@@ -27,40 +29,33 @@ const Activity = (props) => {
     };
 
     return (
-        <div className={classes.Activity}>
-            <div className={[classes.TitleRow, classes.Row].join(' ')}>
-                <div
-                    className={[
-                        classes.ActivityElement,
-                        classes.ActivityTitle,
-                    ].join(' ')}
-                >
-                    {props.title}
+        <React.Fragment>
+            <ActivityColorStrip activity={props.title}></ActivityColorStrip>
+            <div className={classes.Activity}>
+                <div className={classes.Row}>
+                    <div
+                        className={[
+                            classes.ActivityElement,
+                            classes.ActivityTitle,
+                        ].join(' ')}
+                    >
+                        {props.title}
+                    </div>
+                    <img src={ellipsisIcon} alt="" />
                 </div>
-                <div className={classes.ActivityElement}>el</div>
-            </div>
-            <div className={[classes.ResultRow, classes.Row].join(' ')}>
-                <div
-                    className={[
-                        classes.ActivityElement,
-                        classes.CurrentResult,
-                    ].join(' ')}
-                >
-                    {props.timeframe.current + 'hrs'}
-                </div>
-                <div
-                    className={[
-                        classes.ActivityElement,
-                        classes.LastResult,
-                    ].join(' ')}
-                >
-                    {getLastPeriodString(
-                        reportPeriodContext.reportPeriod,
-                        props.timeframe.previous
-                    )}
+                <div className={[classes.ResultRow, classes.Row].join(' ')}>
+                    <div className={classes.CurrentResult}>
+                        {props.timeframe.current + 'hrs'}
+                    </div>
+                    <div>
+                        {getLastPeriodString(
+                            reportPeriodContext.reportPeriod,
+                            props.timeframe.previous
+                        )}
+                    </div>
                 </div>
             </div>
-        </div>
+        </React.Fragment>
     );
 };
 

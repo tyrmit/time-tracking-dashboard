@@ -1,0 +1,41 @@
+.ColorStrip {
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ActivityIcon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+}
+
+.Work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.Play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.Study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.Exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+.Social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.SelfCare {
+    background-color: hsl(43, 84%, 65%);
+}
