@@ -29,7 +29,12 @@ const Activity = (props) => {
     };
 
     return (
-        <div className={classes[props.title.replace(' ', '')]}>
+        <div
+            className={[
+                classes.Activity,
+                classes[props.title.replace(' ', '')],
+            ].join(' ')}
+        >
             <ActivityColorStrip activity={props.title}></ActivityColorStrip>
             <div
                 className={classes.ActivityDetail}

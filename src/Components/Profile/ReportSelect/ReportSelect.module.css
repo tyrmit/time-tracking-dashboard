@@ -21,3 +21,15 @@
 .Highlighted {
     color: #fff;
 }
+
+@media (min-width: 900px) {
+    .ReportPeriodOptions {
+        height: calc(40% + 20px);
+    }
+
+    .NavItems {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}

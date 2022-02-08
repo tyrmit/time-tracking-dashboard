@@ -1,9 +1,14 @@
+.Activity {
+    position: relative;
+}
+
 .ActivityDetail {
     text-align: center;
     padding: 1.5rem;
-    padding-top: 2rem;
     background-color: #1d204b;
     border-radius: 10px;
+    position: relative;
+    z-index: 100;
 }
 
 .Row {
@@ -28,6 +33,22 @@
 }
 
 @media (min-width: 900px) {
+    .ResultRow {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 16px;
+    }
+
+    .CurrentResult {
+        margin-bottom: 12px;
+    }
+
+    .Activity {
+        width: 20vw;
+        min-width: 200px;
+    }
+
     .Work {
         grid-area: work;
     }
