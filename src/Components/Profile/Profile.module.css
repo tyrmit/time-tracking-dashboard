@@ -32,6 +32,17 @@
     }
 
     .ProfileDetail {
-        height: 60%;
+        height: 65%;
+        display: block;
+        text-align: left;
+    }
+
+    .ProfilePic {
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .ReportFor {
+        display: block;
     }
 }
