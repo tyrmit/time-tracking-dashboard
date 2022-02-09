@@ -18,6 +18,11 @@
     font-size: 0.9rem;
 }
 
+.NavItem:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
 .Highlighted {
     color: #fff;
 }

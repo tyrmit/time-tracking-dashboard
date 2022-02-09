@@ -32,6 +32,7 @@ const Activity = (props) => {
         <div
             className={[
                 classes.Activity,
+                classes.Hoverable,
                 classes[props.title.replace(' ', '')],
             ].join(' ')}
         >
@@ -51,7 +52,11 @@ const Activity = (props) => {
                     >
                         {props.title}
                     </div>
-                    <img src={ellipsisIcon} alt="" />
+                    <img
+                        className={classes.Hoverable}
+                        src={ellipsisIcon}
+                        alt=""
+                    />
                 </div>
                 <div className={[classes.ResultRow, classes.Row].join(' ')}>
                     <div className={classes.CurrentResult}>

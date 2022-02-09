@@ -32,6 +32,11 @@
     color: #fff;
 }
 
+.Hoverable:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
 @media (min-width: 900px) {
     .ResultRow {
         flex-direction: column;
