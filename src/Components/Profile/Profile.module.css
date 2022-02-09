@@ -29,6 +29,7 @@
         grid-area: profile;
         height: 100%;
         width: 20vw;
+        max-width: 240px;
     }
 
     .ProfileDetail {
